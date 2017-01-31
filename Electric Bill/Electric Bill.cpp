@@ -22,10 +22,15 @@ int main()
 	double consumption, totalbill;
 
 	cout << "This program will calculate and print bills for the city power company." << endl;
+	
+	cout << endl;
 
 	cout << "'R' for Residential" << endl;
 	cout << "'C' for Commercial" << endl;
 	cout << "'I' for Industrial" << endl;
+
+	cout << endl;
+
 	cout << "Input the type of building based on the list above: "; cin >> usercode;
 	cout << "Input the amount of electricity consumed in kwh: "; cin >> consumption;
 
