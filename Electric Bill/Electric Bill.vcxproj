@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{963ED564-76B3-4270-BD8D-0B493CFFC6B9}</ProjectGuid>
-    <RootNamespace>ExercisesCOMP202</RootNamespace>
+    <ProjectGuid>{38B4C66A-D2B6-4E9C-912A-64294705B7A6}</ProjectGuid>
+    <RootNamespace>ElectricBill</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -110,6 +110,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Electric Bill.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
