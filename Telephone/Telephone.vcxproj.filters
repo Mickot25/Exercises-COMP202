@@ -18,5 +18,8 @@
     <ClCompile Include="Telephone (use switch).cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Telephone.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
