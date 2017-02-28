@@ -36,6 +36,7 @@ int main()
 
 		else
 			cout << "All the numbers between " << x << " and " << y << " that are divisible by 3 and 4: " << endl;
+
 		for (sum = 0; x <= y; x++)
 		{
 			if (x % 3 == 0 && x % 4 == 0)
