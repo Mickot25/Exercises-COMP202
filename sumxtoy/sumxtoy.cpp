@@ -40,13 +40,13 @@ int main()
 		{
 			if (x % 3 == 0 && x % 4 == 0)
 			{
-				cout << x << endl;
+				cout << x << ". ";
 
 				sum += x;
 			}
 		}
 
-		cout << "The sum of all these integers is: " << sum << endl << endl;
+		cout << endl << endl << "The sum of all these integers is: " << sum << endl << endl;
 
 		cout << "Do you want to repeat the program? (Y/N): "; cin >> choice;
 	} while (choice == 'Y' || choice == 'y');
