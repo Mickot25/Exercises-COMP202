@@ -13,35 +13,45 @@ using namespace std;
 int main()
 {
 	int x, y, sum;
+	char choice;
+
 	cout << "This program will compute for the sum of all integers both" << endl;
 	cout << "divisible by 3 and 4, between two values inputted by the user." << endl << endl;
 
-	cout << "Input the first value: "; cin >> x;
-	cout << "Input the second value: "; cin >> y;
-	
-	if (x > y)
-	{
-		cout << "Invalid input! Your second value must be greater than your first value!" << endl;
-		cout << "Please try again." << endl;
+	do {
+		cout << endl;
+		cout << "Input the first value: "; cin >> x;
+		cout << "Input the second value: "; cin >> y;
 
-		_getch();
-		return 0;
-	}
+		cout << endl;
 
-	else
-	cout << "All the numbers between " << x << " and " << y << " that are divisible by 3 and 4: " << endl;
-	for (sum = 0; x <= y; x++)
-	{
-		if (x % 3 == 0 && x % 4 == 0)
+		if (x > y)
 		{
-			cout << x << endl;
+			cout << "Invalid input! Your second value must be greater than your first value!" << endl;
+			cout << "Please try again." << endl;
 
-			sum += x;
+			_getch();
+			return 0;
 		}
-	}
 
-	cout << "The sum of all these integers is: " << sum << endl;
+		else
+			cout << "All the numbers between " << x << " and " << y << " that are divisible by 3 and 4: " << endl;
+		for (sum = 0; x <= y; x++)
+		{
+			if (x % 3 == 0 && x % 4 == 0)
+			{
+				cout << x << endl;
 
-	_getch();
+				sum += x;
+			}
+		}
+
+		cout << "The sum of all these integers is: " << sum << endl;
+
+		cout << endl;
+
+		cout << "Do you want to repeat the program? (Y/N): "; cin >> choice;
+	} while (choice == 'Y' || choice == 'y');
+
 	return 0;
 }
