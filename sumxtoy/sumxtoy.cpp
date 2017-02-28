@@ -46,9 +46,7 @@ int main()
 			}
 		}
 
-		cout << "The sum of all these integers is: " << sum << endl;
-
-		cout << endl;
+		cout << "The sum of all these integers is: " << sum << endl << endl;
 
 		cout << "Do you want to repeat the program? (Y/N): "; cin >> choice;
 	} while (choice == 'Y' || choice == 'y');
