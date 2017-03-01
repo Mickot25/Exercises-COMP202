@@ -27,15 +27,17 @@ int main()
 
 		if (x > y)
 		{
-			cout << "Invalid input! Your second value must be greater than your first value!" << endl;
-			cout << "Please try again." << endl;
+			do
+			{
+				cout << "Invalid input! Your second value must be greater than your first value!" << endl;
+				cout << "Please try again." << endl << endl;
 
-			_getch();
-			return 0;
+				cout << "Input the second value: "; cin >> y;
+			} while (x > y);
 		}
-
-		else
-			cout << "All the numbers between " << x << " and " << y << " that are divisible by 3 and 4: " << endl;
+		
+		cout << endl;
+		cout << "All the numbers between " << x << " and " << y << " that are divisible by 3 and 4: " << endl;
 
 		for (sum = 0; x <= y; x++)
 		{
