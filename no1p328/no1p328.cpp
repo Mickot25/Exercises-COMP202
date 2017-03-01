@@ -32,7 +32,7 @@ int main()
 
 		input = abs(input); //Para gumana mga negative number na inputs.
 
-		inputcounter = input; //Para di maapektuhan yung value ng input natin kasi ididivide natin yun sa 10 para mabilang ilang digits...
+		inputcounter = input; //Kinopya natin value ng input natin para di maapektuhan yung value ng input natin kasi ididivide natin yun sa 10 para mabilang ilang digits... Gagamitin ulit kasi mamaya yung original value ng input.
 
 		counter = -1;
 		while (inputcounter > 0)
