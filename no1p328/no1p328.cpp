@@ -32,7 +32,7 @@ int main()
 
 		input = abs(input); //Para gumana mga negative number na inputs.
 
-		inputcounter = input;
+		inputcounter = input; //Para di maapektuhan yung value ng input natin kasi ididivide natin yun sa 10 para mabilang ilang digits...
 
 		counter = -1;
 		while (inputcounter > 0)
@@ -62,7 +62,7 @@ int main()
 		cout << endl;
 		cout << "The sum of all the digits: " << sum << endl << endl; // Display the sum.
 
-		cout << "Repeat the program? (Y/N): "; cin >> choice;
+		cout << "Repeat the program? (Y/N): "; cin >> choice; 
 
 	} while (choice == 'Y' || choice == 'y');
 
