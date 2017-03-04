@@ -3,9 +3,9 @@ Write a program that will produce a table fo x and y values for the given functi
 
 y = 3x^5 - 2x^3 + x; x is from a to b in increments of 0.2.
 
-* Input validation: a<b
-* Your program should execute for as long as the user wants to continue
-* Round-off results to 2 decimal places
+* Input validation: a<b.
+* Your program should execute for as long as the user wants to continue.
+* Round-off results to 2 decimal places.
 
 filename: function
 */
