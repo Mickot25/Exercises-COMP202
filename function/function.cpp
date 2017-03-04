@@ -44,7 +44,7 @@ int main()
 
 		for (a=a-0.00000000001; a <= b; a+=(0.2))
 		{
-			cout << "\t\t " << fixed << setprecision(2) << a << "\t\t\t " << setprecision(0) << 3 * pow(a, 5.0) - 2 * pow(a, 3.0) + a << ".00" << endl;
+			cout << "\t\t " << fixed << setprecision(2) << a << "\t\t\t " << 3 * pow(a, 5.0) - 2 * pow(a, 3.0) + a << endl;
 
 		}
 		cout << endl;
