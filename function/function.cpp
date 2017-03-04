@@ -42,7 +42,7 @@ int main()
 
 		cout << "\t\t X VALUE \t\t Y VALUE" << endl;
 
-		for (a=a-0.0000001; a <= b; a+=(0.2))
+		for (a=a-0.00000000001; a <= b; a+=(0.2))
 		{
 			cout << "\t\t " << fixed << setprecision(2) << a << "\t\t\t " << setprecision(0) << 3 * pow(a, 5.0) - 2 * pow(a, 3.0) + a << ".00" << endl;
 
