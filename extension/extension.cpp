@@ -28,37 +28,46 @@ int main()
 {
 	int Tf, To = 0, increment;
 	double Lo, a = 0.0000117;
-	cout << "This program will compute for the linear expansion of a steel bridge from initial temperature = 0." << endl << endl;
-	cout << "Input final temperature: "; cin >> Tf;
-
-	while (Tf <= 0)
+	char choice;
+	do
 	{
-		cout << "Final temperature must be greater than 0!" << endl << "Please try again." << endl << endl;
+		cout << "This program will compute for the linear expansion of a steel bridge from initial temperature = 0." << endl << endl;
 		cout << "Input final temperature: "; cin >> Tf;
-	}
 
-	cout << "Input initial length: "; cin >> Lo;
+		while (Tf <= 0)
+		{
+			cout << "Final temperature must be greater than 0!" << endl << "Please try again." << endl << endl;
+			cout << "Input final temperature: "; cin >> Tf;
+		}
 
-	while (Lo <= 0)
-	{
-		cout << "Your initial length must be greater than 0!" << endl << "Please try again" << endl << endl;
 		cout << "Input initial length: "; cin >> Lo;
-	}
-	cout << "Input increment of temperature from 1-5: "; cin >> increment;
 
-	while (increment < 1 || increment > 5)
-	{
-		cout << "Increment must be within 1-5!" << endl << "Please try again" << endl << endl;
+		while (Lo <= 0)
+		{
+			cout << "Your initial length must be greater than 0!" << endl << "Please try again" << endl << endl;
+			cout << "Input initial length: "; cin >> Lo;
+		}
 		cout << "Input increment of temperature from 1-5: "; cin >> increment;
-	}
 
-	cout << endl;
-	
-	cout << "Length \t\t\t Temperature" << endl;
-	for (; To <= Tf; To += increment)
-	{
-		cout << Lo * (1 + a * (double) To) << " \t\t\t " << To << endl;
-	}
+		while (increment < 1 || increment > 5)
+		{
+			cout << "Increment must be within 1-5!" << endl << "Please try again" << endl << endl;
+			cout << "Input increment of temperature from 1-5: "; cin >> increment;
+		}
+
+		cout << endl;
+
+		cout << "Length \t\t\t Temperature" << endl;
+		for (; To <= Tf; To += increment)
+		{
+			cout << fixed << setprecision(2) << Lo * (1 + a * (double)To) << " \t\t\t " << To << endl;
+		}
+
+		cout << endl;
+
+		cout << "Do you want to repeat the program? Y if yes, any other letter if no: "; cin >> choice;
+		cout << endl;
+	} while (choice == 'Y' || choice == 'y');
 
 	_getch();
 	return 0;
