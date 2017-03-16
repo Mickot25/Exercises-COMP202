@@ -15,11 +15,10 @@ using namespace std;
 
 int main()
 {
-	int x;
+	int x = 1;
 
 	cout << "This program will print integers from 1 to 100." << endl;
 
-	x = 1;
 	while (x<=100)
 	{
 		if (x % 5 != 0)
