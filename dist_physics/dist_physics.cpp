@@ -13,10 +13,10 @@ and the total distance the golf ball falls at the end of each interval.
 The output should complete the following chart:
 
 Time(sec)---Total distance (ft)	---	Total distance (m)
-0			0.00						0.00
-1			16.00						4.99
-...			...							...
-t			...							...
+0			0.00					0.00
+1			16.00					4.99
+...			...						...
+t			...						...
 
 - input validation: t>0
 - your program should execute for as long as the user wants to continue
