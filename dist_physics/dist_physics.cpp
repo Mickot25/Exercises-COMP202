@@ -47,7 +47,7 @@ int main()
 		{
 			cout << "Time elapsed should be greater than 0! Please try again." << endl << endl;
 
-			cout << "Input time elapsed the ball si in free fall: "; cin >> time;
+			cout << "Input time elapsed the ball is in free fall: "; cin >> time;
 		}
 
 		cout << endl;
