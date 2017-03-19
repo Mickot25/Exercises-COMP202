@@ -52,13 +52,13 @@ int main()
 
 		cout << endl;
 
-		cout << "Time(sec) \t Total distance (ft) \t Total distance (m)" << endl;
+		cout << left << setw(20) << "Time(sec)" << setw(30) << "Total distance (ft)" << setw(20) << "Total distance (m)" << endl;
 		for (int timer = 0; timer <= time; timer++)
 		{
 			distanceft = 0.5 * 32.0 * pow(timer, 2.0);
 			distancem = 0.5 * 9.8 * pow(timer, 2.0);
 
-			cout << timer << " \t\t " << distanceft << " \t\t\t " << distancem << endl;
+			cout << fixed << setprecision(2) << left << setw(20) << timer << setw(30) << distanceft << distancem << endl;
 		}
 
 		cout << endl;
