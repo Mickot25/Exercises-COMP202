@@ -4,8 +4,15 @@ using namespace std;
 
 int main()
 {
-	cout << oct << (9) << endl;
-	cout << dec << (011) << endl;
+	int n, s = 0;
+	cout << "Enter a number: "; cin >> n;
+
+	while (n > 0)
+	{
+		s += (n % 10);
+		n /= 10;
+	}
+	cout << "Sum of all digits: " << s << endl;
 
 	_getch();
 	return 0;
