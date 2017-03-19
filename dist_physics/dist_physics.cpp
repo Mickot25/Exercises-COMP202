@@ -30,3 +30,45 @@ filename: dist_physics
 #include <math.h>
 #include <iomanip>
 using namespace std;
+
+int main()
+{
+	double distanceft, distancem;
+	int time;
+	char choice;
+
+	cout << "This program will compute for the distance travelled of a ball in free fall." << endl << endl;
+
+	do
+	{
+		cout << "Input time elapsed the ball is in free fall: "; cin >> time;
+
+		while (time <= 0)
+		{
+			cout << "Time elapsed should be greater than 0! Please try again." << endl << endl;
+
+			cout << "Input time elapsed the ball si in free fall: "; cin >> time;
+		}
+
+		cout << endl;
+
+		cout << "Time(sec) \t Total distance (ft) \t Total distance (m)" << endl;
+		for (int timer = 0; timer <= time; timer++)
+		{
+			distanceft = 0.5 * 32.0 * pow(timer, 2.0);
+			distancem = 0.5 * 9.8 * pow(timer, 2.0);
+
+			cout << timer << " \t\t " << distanceft << " \t\t\t " << distancem << endl;
+		}
+
+		cout << endl;
+
+		cout << "Do you want to repeat the program? (Y/N): "; cin >> choice;
+
+		cout << endl;
+	} while (choice == 'Y' || choice == 'y');
+
+
+	_getch();
+	return 0;
+}
