@@ -26,8 +26,7 @@ using namespace std;
 
 int main()
 {
-	int Tf, To = 0, increment;
-	double Lo, a = 0.0000117;
+	double Tf, To = 0, increment, Lo, a = 0.0000117;
 	char choice;
 	do
 	{
