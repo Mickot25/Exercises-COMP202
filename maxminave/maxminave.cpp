@@ -24,7 +24,7 @@ int main()
 				if (number >= max)
 					max = number;
 
-				else if (number <= min)
+				if (number <= min)
 					min = number;
 				cout << "Input a series of numbers, press 0 to stop: "; cin >> number;
 			}
@@ -33,12 +33,9 @@ int main()
 
 			cout << "Max: " << max << endl;
 			cout << "Min: " << min << endl;
-			cout << "Ave: " << (max + min) / 2.0 << endl;
-
-			cout << endl;
+			cout << "Ave: " << (max + min) / 2.0 << endl << endl;
 
 			cout << "Do you want to repeat the program? Press Y: "; cin >> choice;
-
 			cout << endl;
 		}
 
