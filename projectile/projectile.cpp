@@ -44,7 +44,7 @@ int main()
 	while (angle < 0 || angle > 90)
 	{
 		cout << "Invalid angle! It must be between 0 - 90." << endl << "Please try again." << endl << endl;
-		cout << "Input initial velocity of projectile: "; cin >> angle;
+		cout << "Input angle of projection: "; cin >> angle;
 	}
 
 	cout << endl;
