@@ -1,44 +1,34 @@
+/*
+There are 9870 people in a town whose population increases by ten percent each year.
+Write a loop that prints the annual population and determine how many years it will take for
+the population to go over 30,000.
+filename: population
+*/
+
 #include<iostream>
 #include<conio.h>
+#include<iomanip>
 using namespace std;
 
 int main()
-
 {
+	double pop, ctr, annual;
 
-	double min, max, x;
-	char ans;
+	cout << "This program will calculate the annual population of the town and";
+	cout << "how many years it will take for the population to go over 30,000" << endl << endl;
+	cout << "year" << "\t\t" << "Annual Population" << endl;
 
-	do {
-		cout << "this program will compute and display the min and maximum value of input numbers" << endl;
-		cout << "Please enter series of numbers (0 to stop): ";
-		cin >> x;
-		min = x;
-		cin >> x;
-		max = x;
-		while (x != 0)
-		{
-			if (x>max)
-			{
-				max = x;
-				//gawin mong max = x
-			}
-			if (x<max)
-			{
-				min = x;
-				//gawin mong min = x
-			}
-			cin >> x;
-
-		}
-		cout << "max: " << max << endl;
-		cout << "min: " << min << endl;
-		cout << "Average is: " << (max + min) / 2.0 << endl;
-
-		cout << "If you wish to continue, press Y....: ";
-		cin >> ans;
-	} while (ans == 'Y' && ans == 'y');
+	pop = 9870;
+	annual = pop;
+	ctr = 1;
+	while (annual <= 30, 000)
+	{
+		annual + (annual*0.1);
+		cout << ctr << "\t\t" << annual;
+		ctr++;
+	}
 
 	_getch();
 	return 0;
+
 }
