@@ -53,7 +53,7 @@ int main()
 
 	for (time = 0; time <= 5; time += 0.5)
 	{
-		cout << setw(20) << left << time << setw(20) << v * time * cos(angle*pi / 180) << v * time * sin(angle*pi / 180) << endl;
+		cout << fixed << setprecision(2) << setw(20) << left << time << setw(20) << v * time * cos(angle*pi / 180) << v * time * sin(angle*pi / 180) << endl;
 	}
 
 	_getch();
